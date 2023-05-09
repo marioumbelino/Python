@@ -11,3 +11,4 @@ if r1 < r2 + r3:
         print('Essas retas não conseguem formar um triângulo!')
 else:
     print('Essas retas não conseguem formar um triângulo!')
+    print('Parabéns')
