@@ -1,0 +1,5 @@
+nomec = str(input('Digite seu nome completo: ')).strip()
+nome = nomec.split()
+print('Seu nome completo é: {}'.format(nomec))
+print('Seu nome é: {}'.format(nome[0]))
+print('Seu sobrenome é: {}'.format(nome[-1]))
