@@ -1,4 +1,3 @@
-from time import sleep
 print('-=-' * 6)
 print('\033[1;35mCalculadora IMC\033[m')
 print('-=-' * 6)
