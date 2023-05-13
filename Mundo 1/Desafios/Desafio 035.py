@@ -8,6 +8,6 @@ r3 = float(input('Informe o comprimento da terceira reta: '))
 print('Analisando, aguarde...')
 sleep(3)
 if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
-     print('Essas retas CONSEGUEM formar um triângulo!')
+    print('Essas retas CONSEGUEM formar um triângulo!')
 else:
     print('Essas retas NÃO conseguem formar um triângulo!')
