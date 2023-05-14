@@ -1,15 +1,9 @@
-from datetime import date
-ano = int(input('Informe seu ano de nascimento: '))
-ida = date.today().year - ano
-cor = '\033[1;35m'
-ori = '\033[m'
-if ida <= 9:
-    print('Sua categoria de natação é {}MIRIM!{}'.format(cor, ori))
-elif ida > 9 and ida <= 14:
-    print('Sua categoria de natação é {}INFANTIL{}'.format(cor, ori))
-elif ida > 14 and ida <= 19:
-    print('Sua categoria de natação é {}JÚNIOR{}'.format(cor, ori))
-elif ida == 20:
-    print('Sua categoria de natação é {}SÊNIOR{}'.format(cor, ori))
-else:
-    print('Sua categoria de natação é {}MASTER{}'.format(cor, ori))
+nota1 = float(input('Digite sua primeira nota: '))
+nota2 = float(input('Digite sua segunda nota: '))
+média = (nota1 + nota2) / 2
+if média >= 7:
+    print('Parabéns, com suas notas \033[1;32mvocê foi aprovado\033[m!! Sua média: {}!'.format(média))
+elif média < 7 and média >=5:
+    print('Que pena! Suas notas não foram suficiente para você ser aprovado, \nmas não se desanime, ainda \033[1;36mpoderá realizar a prova de recuperação\033[m!! \nSua média: {}!'.format(média))
+elif média < 5:
+    print('Que pena! Suas notas \033[1;31mnão foram suficientes para você ser aprovado nem ficar de recuperação\033[m. \nMas não se abale, com foco, disposição e estudo, você conseguirá sua aprovação!. \nSua média: {}'.format(média))

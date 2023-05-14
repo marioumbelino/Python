@@ -1,9 +1,17 @@
-nota1 = float(input('Digite sua primeira nota: '))
-nota2 = float(input('Digite sua segunda nota: '))
-média = (nota1 + nota2) / 2
-if média >= 7:
-    print('Parabéns, com suas notas \033[1;32mvocê foi aprovado\033[m!! Sua média: {}!'.format(média))
-elif média < 7 and média >=5:
-    print('Que pena! Suas notas não foram suficiente para você ser aprovado, \nmas não se desanime, ainda \033[1;36mpoderá realizar a prova de recuperação\033[m!! \nSua média: {}!'.format(média))
-elif média < 5:
-    print('Que pena! Suas notas \033[1;31mnão foram suficientes para você ser aprovado nem ficar de recuperação\033[m. \nMas não se abale, com foco, disposição e estudo, você conseguirá sua aprovação!. \nSua média: {}'.format(média))
+from datetime import date
+from math import trunc
+nasc = int(input('Me informe o ano do seu nascimento: '))
+alis = date.today().year
+pas = alis - nasc - 18
+ant = (alis - nasc - 18) * -1
+if alis - nasc == 18:
+    print('Já está na hora de você se alistar no Exército Brasileiro. \nAcesse \033[1;31malistamento.eb.mil.br\033[m e aliste-se já.')
+elif alis - nasc < 18:
+    if ant == 1:
+        print("Ainda não chegou sua hora de se alistar no Exército Brasileiro, falta apenas 1 ano. \nLembrando que o alistamento é obrigatório para jovens masculinos que possuem 18 anos ou mais.")
+    else:
+        print('Ainda não chegou sua hora de se alistar no Exército Brasileiro, faltam {} anos. \nLembrando que o alistamento é obrigatório para jovens masculinos com 18 anos ou mais.'.format(ant))
+elif pas == 1:
+    print('Já passou do momento de você se alistar!! Se passou 1 ano! \nAcesse o site \033[1;31m"alistamento.eb.mil.br\033[m e aliste-se às forças armadas!')
+else:
+    print('Já passou do momento de você se alistar!! Já se passaram {} anos! \nAcesse o site \033[1;31m"alistamento.gov.br"\033[m e aliste-se às forças armadas!'.format(trunc(pas)))
