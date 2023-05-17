@@ -13,4 +13,5 @@ if 'CARTÃO' in forma or 'CARTAO' in forma:
 elif 'DINHEIRO' in forma or 'CHEQUE' in forma or 'PIX' in forma:
     desc = valor - (valor * 10 / 100)
     print('Pagando em dinheiro, cheque ou pix, você ganha um desconto de 10% no valor total do produto. \nAssim, você pagará um total de R${:.2f} pelo produto!'.format(desc))
-        
+else:
+    print('Opção invalida, por favor, tente novamente!')

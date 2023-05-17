@@ -9,7 +9,7 @@ elif ida > 9 and ida <= 14:
     print('Sua categoria de natação é {}INFANTIL{}'.format(cor, ori))
 elif ida > 14 and ida <= 19:
     print('Sua categoria de natação é {}JÚNIOR{}'.format(cor, ori))
-elif ida == 20:
+elif ida <= 25:
     print('Sua categoria de natação é {}SÊNIOR{}'.format(cor, ori))
 else:
     print('Sua categoria de natação é {}MASTER{}'.format(cor, ori))
