@@ -1,4 +1,4 @@
-frase = str(input('Digite uma frase: ')).split()
+frase = str(input('Digite uma frase: ')).lower().split()
 frase = ''.join(frase)
 inv = frase[::-1]
 if inv == frase:

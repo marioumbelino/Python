@@ -1,4 +1,4 @@
-num = int(input('Digite um núemro: '))
+num = int(input('Digite um número: '))
 primo = 0
 for c in range (1, num+1):
     if num % c == 0:
