@@ -1,7 +1,7 @@
 menu = 0
-while menu != 5 or menu == 4:
-    n1 = int(input('Digite o 1° valor: '))
-    n2 = int(input('Digite o 2° valor: '))
+n1 = int(input('Digite o 1° valor: '))
+n2 = int(input('Digite o 2° valor: '))
+while menu != 5:
     print('---- MENU ----')
     print('[1] SOMAR \n[2] MULTIPLICAR \n[3] MAIOR \n[4] NOVOS NÚMEROS \n[5] SAIR DO PROGRAMA')
     menu = int(input('Qual ação deseja realizar? '))
@@ -18,6 +18,8 @@ while menu != 5 or menu == 4:
             print('{} é o maior.'.format(n1))
     elif menu == 4:
         print('Digite novos números')
+        n1 = int(input('Digite o 1° valor: '))
+        n2 = int(input('Digite o 2° valor: '))
     elif menu == 5:
         print('Que pena que queira sair do meu programa, volte sempre!!')  
     else:
