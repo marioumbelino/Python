@@ -1,6 +1,6 @@
 res = 's'
 num = 0
- = 0
+soma = 0
 count = 0
 maior = 0
 menor = 0
