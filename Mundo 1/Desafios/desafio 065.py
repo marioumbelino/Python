@@ -1,12 +1,12 @@
 res = 's'
 num = 0
-soma = 0
+ = 0
 count = 0
 maior = 0
 menor = 0
 while res in 'Ss':
     num = int(input('Digite um número inteiro: '))
-    res = str(input('Você deseja continuar [S/N]? '))
+    res = str(input('Você deseja continuar [S/N]? ')).strip().upper()[0]
     soma += num
     count += 1
     if count == 1:
