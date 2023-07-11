@@ -1,3 +1,4 @@
+from time import sleep
 def contador(a, b, c):
     lin()
     c = abs(c)
@@ -8,7 +9,8 @@ def contador(a, b, c):
         c = -c
         b -= 2
     for num in range(a, b + 1, c):
-        print(num, end=' ')
+        print(num, end=' ', flush=True)
+        sleep(0.5)
     print('FIM!')
     lin()
 def lin():
