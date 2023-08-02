@@ -1,0 +1,9 @@
+----------------------------------------
+          PESSOAS CADASTRADAS           
+----------------------------------------
+Mário                    18 anos
+Talita                   18 anos
+Thiago                   28 anos
+Beatriz                  15 anos
+Gabriel                  18 anos
+Mylena                   22 anos
